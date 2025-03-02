@@ -23,7 +23,6 @@ export default function App() {
   const positiveFeedback = Math.round((reviewType.good / totalFeedback) * 100);
 
   useEffect(() => {
-    console.log(567890);
     localStorage.setItem("current-effect", JSON.stringify(reviewType));
   }, [reviewType]);
 
@@ -52,7 +51,7 @@ export default function App() {
       />
       {totalFeedback > 0 && (
         <Feedback
-          reviewType={reviewType}
+          rewiewType={reviewType}
           totalFeedback={totalFeedback}
           positiveFeedback={positiveFeedback}
         />

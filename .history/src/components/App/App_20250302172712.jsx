@@ -25,7 +25,7 @@ export default function App() {
   useEffect(() => {
     console.log(567890);
     localStorage.setItem("current-effect", JSON.stringify(reviewType));
-  }, [reviewType]);
+  });
 
   const updateFeedback = (feedbackType) => {
     setRewiewType({
